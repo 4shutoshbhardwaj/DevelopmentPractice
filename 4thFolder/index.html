@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page development</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        .container{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+        }
+        .navbar{
+            height: 50px;
+            width: 100%;
+            background-color: pink;
+        }
+        .main-content{
+            margin-top: 30px;
+            height: 700px;
+            width: 95%;
+            background-color: lightgreen;
+            display:flex;
+            padding: 20px;
+        }
+        .box1{
+            height: 95%;
+            width: 45%;
+            background-color: rgb(255, 197, 88);
+            margin: 20px auto;
+        }
+        .box2{
+            height: 95%;
+            width: 45%;
+            background-color: rgb(255, 197, 88);
+            margin: 20px auto;
+        }
+        .welcome{
+            height: 250px;
+            width: 80%;
+            font-size: 70px;
+            background-color: lightblue;
+            text-align:center;
+            border-radius: 30px;
+            padding: 20px;
+            margin: 50px auto;
+        }
+        .footer{
+            height: 50px;
+            width: 100%;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar"></div>
+        <div class="main-content">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="welcome">Welcome to this Sigma Web Development Express</div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
