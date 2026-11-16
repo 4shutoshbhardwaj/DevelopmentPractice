@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        .container{
+            height:100vh;
+            width:100%;
+            background-color: lightblue;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-wrap:wrap;
+            align-content:flex-start;
+            flex-flow:row wrap;
+            gap:30px;
+        }
+        .order9{
+            order:9;
+        }
+        .order10{
+            order:10;
+        }
+        .item{
+            height:100px;
+            width:100px;
+            background-color: red;
+            margin: 10px;
+        }
+        img{
+            width: 777px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://dev-to-uploads.s3.amazonaws.com/i/gv3jyh4xt4fbwtq1qejn.png" alt="flexbox metadata">
+    <div class="container">
+        <div class="item order9">Hi</div>
+        <div class="item order10">Hello</div>
+        <div class="item">How</div>
+        <div class="item">Are</div>
+        <div class="item">You</div>
+        <div class="item">Doing</div>
+        <div class="item">Great</div>
+        <div class="item">Thanks</div>
+        <div class="item">For</div>
+        <div class="item">Asking</div>
+        <div class="item">I</div>
+        <div class="item">Am</div>
+        <div class="item">Fine</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
