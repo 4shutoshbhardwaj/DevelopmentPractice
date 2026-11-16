@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors & pseudo elements</title>
+    <style>
+        /* .box:first-child{
+            background-color: lightblue;
+        } */
+        /* .boxes *{
+            color: red;
+            border: 3px solid purple;
+        } */
+        /* [data-color="primary"]{
+            background-color: lightblue;
+        } */
+        .box:nth-child(odd){
+            background-color: pink;
+        }
+        .box:nth-last-child(2){
+            background-color: lightblue;
+        }
+        .boxes::before{
+            content: "Hey I am a before pseudo element";
+        }
+        .boxes::selection{
+            color:aqua;
+        }
+        .box::first-letter{
+            color: red;
+        }
+        input::placeholder{
+            color:cyan;
+        }
+        </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a box 1</div>
+        <div data-color="secondary" class="box">Hey I am a box 2</div>
+        <div data-color="tertiary" class="box">Hey I am a box 3</div>
+    </div>
+    <input type="text" name="name" id="name" placeholder="Enter your name">
+</body>
+</html>
