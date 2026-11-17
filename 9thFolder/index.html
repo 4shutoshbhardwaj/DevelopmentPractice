@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: aquamarine;
+            width: 50vw;
+            height: 50vh;
+        }
+        .box{
+            background-color: rgb(121, 191, 168);
+            width: 5vw;
+            height: 5vh;
+            /* animation-name: boxKaAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.1, 2.45, 1,-1.58);
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+            animation-play-state: running; */
+            animation: boxKaAnimation 3s infinite cubic-bezier(0.1, 2.45, 1,-1.58) 2s alternate-reverse running;
+        }
+        @keyframes boxKaAnimation {
+            from{
+                /* transform: translate(10px); */
+            }
+            to{
+                transform: translate(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>
