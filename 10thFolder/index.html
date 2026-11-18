@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Bouncing Animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: aquamarine;
+            width: 50vw;
+            height: 400px;
+        }
+        .box{
+            background-color: rgb(120, 38, 136);
+            width: 5vw;
+            height: 5vh;
+            border-radius: 50%;
+            /* animation-name: boxKaAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.1, 2.45, 1,-1.58);
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+            animation-play-state: running; */
+            animation: boxKaAnimation 2s infinite ease-in 0s alternate running;
+        }
+        .translate{
+            /* animation: box1KaAnimation 2s infinite ease-in 0s alternate-reverse running; */
+        }
+        @keyframes boxKaAnimation {
+            0%{
+                /* transform: translate(10px); */
+            }
+            90%{
+                transform: translateY(340px) scale(1, 1);
+            }
+            100%{
+                transform: translateY(350px) scale(1.2, 0.8);
+            }
+        }
+        @keyframes box1KaAnimation {
+            0%{
+                /* transform: translate(10px); */
+            }
+            90%{
+                transform: translateX(340px) scale(1, 1);
+            }
+            100%{
+                transform: translateX(350px) scale(1.2, 0.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
+</body>
+</html>
